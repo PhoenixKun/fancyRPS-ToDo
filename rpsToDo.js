@@ -20,6 +20,7 @@ var losses = 0;
 //TO DO: enter code to match 'losses' above for 'wins'
   
 //YOUR CODE GOES HERE
+var wins = 0;
 //declare and set 'wins' variable to 0 below
 
 			
@@ -31,7 +32,8 @@ var play = function(playerChoice) {
   //TO DO: enter code to match 'player' above for 'opponent' and 'results'
 	
   //YOUR CODE GOES HERE 
-
+  document.getElementById('opponent').innerHTML = ''
+  document.getElementById('results').innerHTML = ''
 	//The user makes their choice, which sets that value (rock, paper, or scissors) to 'player'  
 	//This is our very first Javascript conditional statement!
 	//A conditional statement is where a piece of code gets executed IF something is true. === means a value exactly matches the variable; || stands for "or"
@@ -64,10 +66,11 @@ var play = function(playerChoice) {
   } else if (computerChoice <= 0.67 && computerChoice > 0.33) {
     //TO DO: set computer choice equal to paper here
     //YOUR CODE GOES HERE
-
+computerChoice = 'paper';
     
   //otherwise, choice will be scissors
   } else {
+      computerChoice = 'scissors';
     //TO DO: set computer choice equal to scissors here
     //YOUR CODE GOES HERE
   } 
